@@ -146,6 +146,9 @@ const JobSeekerCard = ({ element, deleteApplication, openModal }) => {
             alt="resume"
             onClick={() => openModal(element.resume.url)}
           />
+          <button>
+            <a>Vew Pdf </a>
+          </button>
         </div>
         <div className="btn_area">
           <button onClick={() => deleteApplication(element._id)}>
@@ -179,11 +182,19 @@ const EmployerCard = ({ element, openModal }) => {
           </p>
         </div>
         <div className="resume">
-          <img
-            src={element.resume.url}
-            alt="resume"
-            onClick={() => openModal(element.resume.url)}
-          />
+          {element.resume.url.includes(".pdf") ? (
+            <button className="pdf-btn">
+              <a href={element.resume.url} target="_blank">
+                View Pdf
+              </a>
+            </button>
+          ) : (
+            <img
+              src={element.resume.url}
+              alt="resume"
+              onClick={() => openModal(element.resume.url)}
+            />
+          )}
         </div>
       </div>
     </>
