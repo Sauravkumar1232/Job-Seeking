@@ -14,24 +14,26 @@ const HowItWorks = () => {
               <FaUserPlus />
               <p>Create Account</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                {/* Sign Up: Click on the 'Register' button located at the bottom
+                left corner of the homepage. Enter Details: Fill out the
+                registration form with your name, email, phone, role , and a
+                secure password. */}
               </p>
             </div>
             <div className="card">
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur, culpa. */}
               </p>
             </div>
             <div className="card">
               <IoMdSend />
               <p>Apply For Job/Recruit Suitable Candidates</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur, culpa. */}
               </p>
             </div>
           </div>

@@ -140,15 +140,20 @@ const JobSeekerCard = ({ element, deleteApplication, openModal }) => {
             <span>CoverLetter:</span> {element.coverLetter}
           </p>
         </div>
-        <div className="resume">
-          <img
-            src={element.resume.url}
-            alt="resume"
-            onClick={() => openModal(element.resume.url)}
-          />
-          <button>
-            <a>Vew Pdf </a>
-          </button>
+        <div className="btn_area">
+          {element.resume.url.includes(".pdf") ? (
+            <button>
+              <a className="anchor" href={element.resume.url} target="_blank">
+                View Pdf
+              </a>
+            </button>
+          ) : (
+            <img
+              src={element.resume.url}
+              alt="resume"
+              onClick={() => openModal(element.resume.url)}
+            />
+          )}
         </div>
         <div className="btn_area">
           <button onClick={() => deleteApplication(element._id)}>
@@ -181,10 +186,10 @@ const EmployerCard = ({ element, openModal }) => {
             <span>CoverLetter:</span> {element.coverLetter}
           </p>
         </div>
-        <div className="resume">
+        <div className="btn_area">
           {element.resume.url.includes(".pdf") ? (
-            <button className="pdf-btn">
-              <a href={element.resume.url} target="_blank">
+            <button>
+              <a className="anchor" href={element.resume.url} target="_blank">
                 View Pdf
               </a>
             </button>

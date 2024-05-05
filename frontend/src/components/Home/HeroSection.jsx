@@ -36,9 +36,15 @@ const HeroSection = () => {
             <h1>Find a job that suits</h1>
             <h1>your interests and skills</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
+              Welcome to Job Seeking, your gateway to fulfilling careers!
+              Whether you're a seasoned professional looking to advance your
+              career or a recent graduate eager to kick-start your journey,
+              we're here to connect you with meaningful opportunities tailored
+              to your skills and aspirations. Explore job listings from top
+              companies, access invaluable resources for career development, and
+              join a vibrant community of job seekers and industry experts. Your
+              dream job is just a click away. Begin your journey to success
+              today with Job Seeking ...
             </p>
           </div>
           <div className="image">

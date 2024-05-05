@@ -149,6 +149,7 @@ p {
   background: #2d5649;
   font-size: 1.2rem;
   border-radius: 7px;
+  cursor: pointer;
 }
 .authPage .container form a {
   padding: 12px;
@@ -799,8 +800,12 @@ p {
   font-weight: bold;
 }
 
-.job_seeker_card .resume .pdf-btn{
-  background-color: #04AA6D; /* Green */
+.anchor{
+  text-decoration: none;
+  color: #f1f3f6;
+}
+/* .job_seeker_card .btn_area button{ */
+  /* background-color: #04AA6D; 
   font-size: large;
   border: none;
   font-family: 'Courier New', Courier, monospace;
@@ -810,9 +815,19 @@ p {
  
   height: 75px;
   width: 75%;
+
+
+  
+  background: #000000;
   display: inline-block;
-}
-.job_seeker_card .resume .pdf-btn .a{
+  color:white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;  */
+/* } */
+.job_seeker_card .pdf-btn .a{
   text-decoration: none;
 }
 .job_seeker_card .resume {
@@ -847,6 +862,7 @@ p {
   padding: 10px 30px;
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 @media (max-width: 1520px) {
   .my_applications .container {
